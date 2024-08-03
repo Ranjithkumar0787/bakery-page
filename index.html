@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bakery.css" />
+    <script src="script.js"></script>
     <title>BAKERY</title>
     <style>
+        
         body {
             background: rgb(114, 41, 2);
         }
@@ -217,12 +219,33 @@
 
         form label {
             margin: 10px 0 5px;
-            color: white;
+            color: rgb(255, 255, 255);
         }
+        .grid-container {
+  display: grid;
+  column-gap: 25px;
+  row-gap: 25px;
+  grid-template-columns: auto auto auto;
+  //background-color: chocolate;
+  padding: 90px;
+}
+
+.grid-item {
+  background-color:rgb(136, 73, 51);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: #000000;
+}
+.grid{
+}
+
     </style>
 </head>
 
 <body>
+    
     <nav>
         <div id="home" class="flex1">
             <ul>
@@ -230,7 +253,7 @@
                 <h1 style="font-family:sans-serif;">SANGI MANGI BAKES</h1>
                 <li class="item"><a href="#about"><img src="images\home.png" height="30px" width="25px"> HOME</a></li>
                 <li class="item"><a href="#products"><img src="images\products.png" height="35px" width="20px">PRODUCTS</a></li>
-                <li class="item"><a href="#about"><img src="images\cart.png" height="30px" width="25px"> CART</a></li>
+                <li class="item"><a href="#cart"><img src="images\cart.png" height="30px" width="25px"> CART</a></li>
                 <li class="item"><a href="#feedback"><img src="images\feedback (1).png" height="30px" width="25px"> FEEDBACK</a></li>
                 <li class="item"><a href="#contact"><img src="images\contact-mail.png" height="30px" width="25px">
                         Contact</a></li>
@@ -247,6 +270,7 @@
             </div>
 
         </div>
+        
         <div id="products" class="flex3">
 
             <img src="images\logo-removebg-preview.png">
@@ -318,6 +342,18 @@
             </section>
 
         </div>
+        <div style="background-color:rgb(114, 41, 2)">
+        <h1 id="cart" style="text-align: center; color: #fff;padding-top: 30px ;">MY  CART</h1>
+        <div class="grid-container" >
+            <div class="grid-item"><a class="grid"><img src="images\cake.jpg" height="200" width="200"><p>cake - ₹600 / per kg</p><button type="button">Add to Cart</button></a></div>
+            <div class="grid-item"><a class="grid"><img src="images\donut.jpeg" height="200" width="200"><p>Donut - ₹50 / per piece</p><button type="button">Add to Cart</button></a></div>
+            <div class="grid-item"><a class="grid"><img src="images\cookies.jpg" height="200" width="200"><p>Cookies - ₹50</p><button type="button">Add to Cart</button></a></div>
+            <div class="grid-item"><a class="grid"><img src="images\cream roll.jpg" height="200" width="200"><p>Cream Roll - ₹25 / per piece</p><button type="button">Add to Cart</button></a></div>
+            <div class="grid-item"><a class="grid"><img src="images\bread.jpg" height="200" width="200"><p>Bread - ₹35</p><button type="button">Add to Cart</button></a></div>
+            <div class="grid-item"><a class="grid"><img src="images\bun butter jam.webp" height="200" width="200"><p>Bun Butter Jam - ₹20 / per piece</p><button type="button">Add to Cart </button></a></div>
+        </div>
+       <!-- / <button type="button" ><h1>Purchase</h1></button> -->
+    </div>
         <div class="flex6" id="feedback">
             <section id="contact" class="container">
                 <h2 style="padding-left: 45% ;color: white;">FEED BACK</h2>
@@ -333,10 +369,10 @@
 
                     <button type="submit">Give your feedback</button>
                 </form>
+                
             </section>
-
         </div>
-        <h2 style="padding-left: 45%;">CONTACT US</h2>
+        <h2 style="padding-left: 45%; color: #fff;">CONTACT US</h2>
         <div id="contact" class="flex5">
             <a><img src="images\phone-call.png" height="25px" width="30">+91-90876422460</a>
             <a><img src="images\gmail.png" height="25px" width="30"> sangimangi007@gmail.com</a>
