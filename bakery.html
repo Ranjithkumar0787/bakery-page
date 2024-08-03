@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bakery.css" />
+    <title>BAKERY</title>
+    <style>
+        body {
+            background: rgb(114, 41, 2);
+        }
+
+        .glow {
+            color: aliceblue;
+            font-size: 60px;
+            font-family: cursive;
+            -webkit-animation: glow 1s ease-in-out infinite alternate;
+            -moz-animation: glow 1s ease-in-out infinite alternate;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000,
+                    0 0 50px #ba621e, 0 0 60px #de370d, 0 0 70px #e44424;
+            }
+
+            to {
+                text-shadow: 0 0 20px #eeeeee,
+                    0 0 60px #910f22, 0 0 70px #ca173b, 0 0 80px #971717;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flex1 {
+            display: flex;
+            background-image: url(https://tse4.mm.bing.net/th?id=OIP.I62Bz6zeF_ONVvyDfxNEEAHaEo&pid=Api&P=0&h=220);
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex-direction: row;
+            justify-content: left;
+            color: aliceblue;
+            padding: .5rem;
+            position: fixed;
+            width: 100%;
+            top: 0px;
+        }
+
+        .flex2 {
+            display: flex;
+            background-image: url(https://png.pngtree.com/background/20230426/original/pngtree-bakery-shop-food-photography-stock-photos-royalty-picture-image_2489408.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 150px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .flex3 {
+            display: flex;
+            background-image: url(https://i.pinimg.com/originals/d4/c6/b5/d4c6b52579dc65ed2cc11e135f6e48b4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 100px;
+
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .flex5{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .flex6 {
+
+            background-image: url(https://png.pngtree.com/background/20230426/original/pngtree-bakery-shop-food-photography-stock-photos-royalty-picture-image_2489408.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* flex-direction: row;
+            justify-content: space-between; */
+            padding: 80px;
+
+        }
+
+        .item {
+            font-size: 20px;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            text-decoration: none;
+
+        }
+
+        li {
+            padding-left: 40px;
+        }
+
+        li:hover {
+            background-color: rgb(197, 92, 18);
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        a {
+
+            text-decoration: none;
+            color: white;
+
+        }
+
+        ol {
+
+            text-decoration: none;
+            background-color: darkcyan;
+        }
+
+        .ran {
+            padding-right: 25px;
+            padding-bottom: 7px;
+            list-style: none;
+            background-color: darkcyan;
+            color: white;
+        }
+
+        .vt {
+            padding-left: 40px;
+        }
+
+        th,
+        td,
+        tr {
+            padding: 20px;
+            border: 3px solid rgb(0, 0, 0);
+            color: aliceblue;
+        }
+
+        .ranj {
+            /* padding: 90px; 
+            padding-left: 150px;  */
+            color: aliceblue;
+            font-size: 60px;
+            font-family: cursive;
+        }
+
+        .ranji {
+            /* padding: 90px; 
+            padding-left: 150px;  */
+            color: aliceblue;
+            font-size: 25px;
+            font-family: monospace;
+        }
+
+        p {
+            color: aliceblue;
+        }
+
+        .menu {
+            padding: 50px 0;
+            text-align: center;
+            font-size: large;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        table {
+            background-color: rgba(97, 89, 89, 0.9);
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: chocolate;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div id="home" class="flex1">
+            <ul>
+                <img style="border-radius: 5px;; " src="images\logo1.jpeg" width="90px" height="60px">
+                <h1 style="font-family:sans-serif;">SANGI MANGI BAKES</h1>
+                <li class="item"><a href="#about"><img src="images\home.png" height="30px" width="25px"> HOME</a></li>
+                <li class="item"><a href="#products"><img src="images\products.png" height="35px" width="20px">PRODUCTS</a></li>
+                <li class="item"><a href="#about"><img src="images\cart.png" height="30px" width="25px"> CART</a></li>
+                <li class="item"><a href="#feedback"><img src="images\feedback (1).png" height="30px" width="25px"> FEEDBACK</a></li>
+                <li class="item"><a href="#contact"><img src="images\contact-mail.png" height="30px" width="25px">
+                        Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="about" class="flex2">
+            <img src="images\bakes.jpg" width="400px" height="350px" style="border-radius:10cqi; padding: 100px;  ;">
+            <div>
+                <p class="glow"><i>HURRY UP !!!! <br>FRESH BAKED</i></p>
+                <p class="ranji">At Delightful Bakery, we believe in the magic of fresh, homemade baked goods. Our
+                    recipes are crafted with love and the finest ingredients to bring you the most delightful treats.
+                    From classic bread to gourmet pastries, we have something for everyone.</p>
+            </div>
+
+        </div>
+        <div id="products" class="flex3">
+
+            <img src="images\logo-removebg-preview.png">
+            <section class="menu">
+                <h1 style="color:rgb(255, 255, 255);">OUR MENU</h1>
+                <div class="container">
+
+                    <table>
+
+                        <tr>
+                            <th>CATEGORY</th>
+                            <th>ITEM</th>
+                            <th>DESCRIPTION</th>
+                            <th>PRICE</th>
+                        </tr>
+
+
+                        <tr>
+                            <td>DRINKS</td>
+                            <td>TEA</td>
+                            <td>ALL VARIETY</td>
+                            <td> ₹ 25.00</td>
+                        </tr>
+                        <tr>
+                            <td>DRINKS</td>
+                            <td>COFFEE</td>
+                            <td>HOT or COLD</td>
+                            <td> ₹ 35.00</td>
+                        </tr>
+                        <tr>
+                            <td>FAST FOOD</td>
+                            <td>CHAAT</td>
+                            <td>SAMOSA,CUTLET,PANI PURI,MASALA PURI</td>
+                            <td> ₹ 20.00/PER ONE</td>
+                        </tr>
+                        <tr>
+                            <td>JUICE</td>
+                            <td>FRESH or SOFT JUICE</td>
+                            <td>ALL VARIETY</td>
+                            <td> ₹ 45.00</td>
+                        </tr>
+                        <tr>
+                            <td>BAKES</td>
+                            <td>PUFF or ROLLS</td>
+                            <td>VEG,MUSHROOM,CHICKEN</td>
+                            <td> ₹ 30.00</td>
+                        </tr>
+                        <tr>
+                            <td>ICE CREAM</td>
+                            <td>ICE CREAM</td>
+                            <td>ALL VARIETY</td>
+                            <td> ₹ 25.00</td>
+                        </tr>
+                        <tr>
+                            <td>COOKIES</td>
+                            <td>CHOCOLATE CHIP COOKIE</td>
+                            <td>ALL VARIETY</td>
+                            <td> ₹ 20.00</td>
+                        </tr>
+                        <tr>
+                            <td>CAKE</td>
+                            <td>PUDDING</td>
+                            <td>ALL VARIETY</td>
+                            <td> ₹ 50.00</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </section>
+
+        </div>
+        <div class="flex6" id="feedback">
+            <section id="contact" class="container">
+                <h2 style="padding-left: 45% ;color: white;">FEED BACK</h2>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Give your feedback</button>
+                </form>
+            </section>
+
+        </div>
+        <h2 style="padding-left: 45%;">CONTACT US</h2>
+        <div id="contact" class="flex5">
+            <a><img src="images\phone-call.png" height="25px" width="30">+91-90876422460</a>
+            <a><img src="images\gmail.png" height="25px" width="30"> sangimangi007@gmail.com</a>
+            <a><img src="images\location.png" height="25px" width="30"> chennai-600028</a>
+
+        </div>
+
+
+    </nav>
+</body>
+
+</html>
