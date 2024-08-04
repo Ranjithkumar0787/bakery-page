@@ -8,9 +8,26 @@
     <script src="script.js"></script>
     <title>BAKERY</title>
     <style>
-        
+        /* @media  screen and (max-width:799px){
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0px;
+        height: 25vh;
+        width: 100px;
+        background-color: white;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 10px 0 0 10px;
+        color: black;
+        transition: 0.3s;
+        z-index: 100;
+    } */
         body {
-            background: rgb(114, 41, 2);
+            background:black;
         }
 
         .glow {
@@ -98,7 +115,13 @@
             /* flex-direction: row;
             justify-content: space-between; */
             padding: 80px;
-
+        }
+        .flex7{
+            display: flex;
+            padding-left: 100px;
+        }
+        .flex8{
+            padding-left: 350px;
         }
 
         .item {
@@ -238,9 +261,6 @@
   text-align: center;
   text-shadow: #000000;
 }
-.grid{
-}
-
     </style>
 </head>
 
@@ -373,12 +393,29 @@
             </section>
         </div>
         <h2 style="padding-left: 45%; color: #fff;">CONTACT US</h2>
-        <div id="contact" class="flex5">
-            <a><img src="images\phone-call.png" height="25px" width="30">+91-90876422460</a>
-            <a><img src="images\gmail.png" height="25px" width="30"> sangimangi007@gmail.com</a>
-            <a><img src="images\location.png" height="25px" width="30"> chennai-600028</a>
-
+        <div class="flex7">
+        <div id="contact" >
+            <p><img style="border-radius: 5px; " src="images\logo1.jpeg" width="60px" height="45px"><h1 style="font-family:sans-serif; color: #fff;">SANGI MANGI BAKES</h1></p>
+            <a><img src="images\phone1.png" height="25px" width="30">Phone: 90876422460</a><br>
+            <a><img src="images\phone1.png" height="25px" width="30">Phone: 90876422470</a><br>
+            <a><img src="images\gmail.png" height="25px" width="30"> Mail: sangimangi007@gmail.com</a><br>
+            <a><img src="images\placeholder.png" height="25px" width="30"> Location: chennai-600028</a>
         </div>
+        <div class="flex8">
+            <br><br><h2 style="color: #fff;">Useful link</h2>
+            <p> Privacy Policy</p>
+            <p> Terms & Conditions</p>
+            <p> Return Policy</p>
+            
+        </div>
+        <div class="flex8">
+            <br><br><h2 style="color: #fff;">Community</h2><br><br>
+            <img src="images\social.png" height="30px" width="30px">
+            <img src="images\facebook.png" height="30px" width="30px"style="padding-left: 20px;">
+            <img src="images\twitter.png" height="30px" width="30px" style="padding-left: 20px;">
+        </div>
+    </div>
+    <p style="padding-left: 40%; color: #fff;">© Copyright 2024. Powered by Sangi Mangi Franchise</p>
 
 
     </nav>
