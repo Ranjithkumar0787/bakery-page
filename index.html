@@ -35,8 +35,7 @@
             font-size: 60px;
             font-family: cursive;
             -webkit-animation: glow 1s ease-in-out infinite alternate;
-            -moz-animation: glow 1s ease-in-out infinite alternate;
-            animation: glow 1s ease-in-out infinite alternate;
+            
         }
 
         @-webkit-keyframes glow {
@@ -165,11 +164,6 @@
             background-color: darkcyan;
             color: white;
         }
-
-        .vt {
-            padding-left: 40px;
-        }
-
         th,
         td,
         tr {
@@ -276,8 +270,13 @@
                 <li class="item"><a href="#cart"><img src="images\cart.png" height="30px" width="25px"> CART</a></li>
                 <li class="item"><a href="#feedback"><img src="images\feedback (1).png" height="30px" width="25px"> FEEDBACK</a></li>
                 <li class="item"><a href="#contact"><img src="images\contact-mail.png" height="30px" width="25px">
-                        Contact</a></li>
+                        Contact</a></li><br>
             </ul>
+            <div class="cart" style="    padding-right: 61px;
+            margin-left: 114px;
+            margin-top: 11px; cursor: pointer;">
+                <button id="cart-button" style="padding: 20px;"> Cart (<span id="cart-count">0</span>)</button>
+            </div>
         </div>
 
         <div id="about" class="flex2">
